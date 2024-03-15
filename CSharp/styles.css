@@ -4,7 +4,7 @@
   }
 
 #Contanier {
-    margin-top: -200px;
+    margin-top: -350px;
     width: 80%;
     left: 40px;
     /*border: 5px solid #76aaaa;*/
@@ -20,8 +20,36 @@ hr {
 
 .ImagenRecortada {
     display: block;
-    margin-top:  -250px;
-    clip-path: polygon(0 38%, 100% 38%, 100% 67%, 0 67%);
+    margin-top: -250px;
+    /*clip-path: polygon(0 38%, 100% 38%, 100% 67%, 0 67%);*/
+    clip-path: polygon(0 38%, 100% 38%, 100% 55%, 0 55%);
+  }
+
+.MiniLogo {
+    position: relative;
+    top: 38px;
+  }
+
+.titulopagina {
+    left: 50px;
+    margin-left: 50px;
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: RGB(32, 32, 32);
+  }
+
+::-webkit-scrollbar-track {
+    background-color: RGB(32, 32, 32);
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: RGB(71, 76, 80);
+  }
+
+::-webkit-scrollbar-button {
+    display: none;
   }
 
 a {
