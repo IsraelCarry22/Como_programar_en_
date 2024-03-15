@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="frame1" onclick="Void(0);">
+    <div class="frame1" data-url="pagina2.html" onclick="redireccionarPagina(this)">
         <div class="bookcsharp">
             <div class="title">
                   <div class="big">Como<br/>programar<br/>en c++</div>
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="frame2" onclick="Void(0);">
+    <div class="frame2" data-url="CSharp/index.html" onclick="redireccionarPagina(this)">
         <div class="bookcplushplush">
             <div class="title">
                   <div class="big">Como<br/>programar<br/>en c#</div>
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="frame3" onclick="Void(0);">
+    <div class="frame3" data-url="pagina2.html" onclick="redireccionarPagina(this)">
         <div class="bookvisualbasic">
             <div class="title">
                   <div class="big">Como<br/>programar<br/>en Vb</div>
@@ -34,5 +34,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
