@@ -4,11 +4,24 @@
   }
 
 #Contanier {
+    margin-top: -200px;
     width: 80%;
-    margin: 60px auto;
     left: 40px;
-    border: 0px solid #76aaaa;
+    /*border: 5px solid #76aaaa;*/
     margin-left: 100px;
+  }
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: RGB(46, 47, 47);
+    margin: 5px 0;
+  }
+
+.ImagenRecortada {
+    display: block;
+    margin-top:  -250px;
+    clip-path: polygon(0 38%, 100% 38%, 100% 67%, 0 67%);
   }
 
 a {
