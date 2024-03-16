@@ -59,9 +59,6 @@ hr {
 
   h2{
     cursor: default;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
   }
 
   hr {
@@ -95,7 +92,7 @@ hr {
     margin-bottom: 10px;
     padding-bottom: 1px;
   }
-
+  
   hr {
     width: 730px;
     border: none;
