@@ -85,6 +85,7 @@ hr {
 }
 
 #Contenido{
+  margin-top: -25px;
   float: right;
   width: calc(70% - 60px);
   padding: 30px;
