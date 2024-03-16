@@ -58,14 +58,12 @@ hr {
   width: 30%;
 
   h2{
+    font-size: 24px;
     cursor: default;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
   }
 
   hr {
-    width: 340px;
+    width: 300px;
     border: none;
     height: 1px;
     background-color: RGB(46, 47, 47);
@@ -76,15 +74,31 @@ hr {
     cursor: default;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-bottom: 1px;
-    border-bottom: 1px solid RGB(46, 47, 47);
-    margin-left: 2px;
+    margin-left: 1px;
+    text-decoration-skip-ink: none;
+  }
+
+  p {
+    position: relative;
+    display: inline-block; /* Para que el borde inferior se ajuste al contenido */
+  }
+
+  p::after {
+      content: '';
+      position: absolute;
+      left: 26px;
+      bottom: -2px;
+      width: calc(100% - 26px);
+      height: 1px;
+      background-color: RGB(46, 47, 47);
   }
 }
 
 #Contenido{
+  margin-top: -25px;
   float: right;
   width: calc(70% - 60px);
   padding: 30px;
@@ -94,7 +108,7 @@ hr {
     margin-bottom: 10px;
     padding-bottom: 1px;
   }
-
+  
   hr {
     width: 730px;
     border: none;
@@ -106,8 +120,8 @@ hr {
 
 footer {
   text-align: center;
-  height: 25px;
-  line-height: 5250px;
+  height: 35px;
+  line-height: 35px;
 
   p{
     cursor: default;
