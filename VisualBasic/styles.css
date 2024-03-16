@@ -55,7 +55,7 @@
 		display: block;
 		width: 120px;
 		height: 20px;
-		background: RGB(86, 13, 100);
+		background: #042c84;
 		transform: translate(13px, 12px);
 		transition: all .3s ease-in-out;
 		box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
@@ -66,7 +66,7 @@
 		color: #fff;
     
 		&:before {
-			background: RGB(86, 13, 100);
+			background: #042c84;
 			box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
 		}
 
