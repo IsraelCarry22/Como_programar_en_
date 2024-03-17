@@ -124,8 +124,8 @@ hr {
   margin-top: -320px;
 
   img {
-    width: 40px; /* Ancho fijo en píxeles */
-    height: auto; /* Altura ajustada automáticamente para mantener la relación de aspecto */
+    width: 40px;
+    height: auto;
     position: relative;
     top: 40px;
   }
@@ -193,23 +193,53 @@ hr {
 }
 
 #Contenido{
+  background-color: rgb(174, 255, 127);
   float: right;
-  width: calc(70% - 60px);
+  width: calc(70% - 40px);
   order: 2;
   padding: 20px;
+}
 
-  .article{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
+.card-container{
+  background-color: aquamarine;
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: rgb(255, 246, 127);
+  width: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 10px;
+  transition: all 400ms ease; /* Transición de todas las propiedades durante 400ms con efecto de suavizado */
+  cursor: pointer;
+
+  img{
+    width: 100%;
+    height: auto;
   }
-  
-  hr {
-    cursor: default;
-    border: none;
-    height: 1px;
-    background-color: RGB(46, 47, 47);
-    margin: 5px 0;
+    /* Estilos al pasar el ratón sobre el elemento */
+    &:hover {
+        box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50); /* Sombra */
+        transform: translateY(-3%); /* Translación hacia arriba */
+    }
+}
+
+.card-content{
+  background-color: rgb(255, 157, 127);
+  padding: 8px;
+
+  h5{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  p{
+    font-size: 12px;
+    line-height:  1.3;
   }
 }
 

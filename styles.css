@@ -37,10 +37,6 @@ body {
     &:hover {
         box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50); /* Sombra */
         transform: translateY(-3%); /* Translación hacia arriba */
-        -webkit-transform: translateY(-3%); /* Translación hacia arriba para Webkit */
-        -moz-transform: translateY(-3%); /* Translación hacia arriba para Firefox */
-        -ms-transform: translateY(-3%); /* Translación hacia arriba para Internet Explorer */
-        -o-transform: translateY(-3%); /* Translación hacia arriba para Opera */
     }
 }
 
