@@ -6,8 +6,8 @@
 	left: 10%;
 	width: 200px;
 	height: 180px;
-	margin-top: -200px;
-	margin-left: -200px;
+	margin-top: -15px;
+	margin-left: -100px;
 	border-radius: 2px;
 	overflow: hidden;
 	font-family:'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -77,22 +77,16 @@
 	}
 }
 
-
 * {
   margin: 0px;
   padding: 0px;
 }
-#Contanier {
-  margin-top: -200px;
-  width: calc(100% - 200px);
-  margin-left: 100px;
 
-  .ImagenRecortada {
-    display: flex;
-    margin-top: -50px;
-    /*clip-path: polygon(0 38%, 100% 38%, 100% 67%, 0 67%);*/
-    clip-path: polygon(0 38%, 100% 38%, 100% 55%, 0 55%);
-  }
+#Contanier {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 100px);
+  margin-left: 50px;
 }
 
 hr {
@@ -107,23 +101,40 @@ hr {
 }
 
 #Portada{
-  width: 100%;
+  height: 400px;
+  margin-top: -150px;
+  margin-bottom: 300px;
+  position: relative;
+
+  .ImagenRecortada {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transform: translateY(-50%);
+    /*clip-path: polygon(0 38%, 100% 38%, 100% 67%, 0 67%);*/
+    clip-path: polygon(0 38%, 100% 38%, 100% 64%, 0 64%);
+  }
 }
 
 #Inicio{
   width: 100%;
-  margin-top: -250px;
+  margin-top: -320px;
 
   img {
+    width: 40px; /* Ancho fijo en píxeles */
+    height: auto; /* Altura ajustada automáticamente para mantener la relación de aspecto */
     position: relative;
-    top: 5px;
+    top: 40px;
   }
 
   h2 {
-    margin-top: -33px;
+    margin-top: -1px;
     cursor: default;
     left: 150px;
-    margin-left: 50px;
+    margin-left: 55px;
   }
 
   p {
@@ -142,14 +153,15 @@ hr {
 #Barralateral {
   float: left;
   width: 30%;
+  order: 1;
 
   h2{
-    font-size: 24px;
     cursor: default;
+    font-size: 24px;
   }
 
   hr {
-    width: 350px;
+    cursor: default;
     border: none;
     height: 1px;
     background-color: RGB(46, 47, 47);
@@ -157,7 +169,7 @@ hr {
   }
 
   .temario {
-    cursor: default;
+    cursor: pointer;
     font-weight: bold;
     font-size: 16px;
     margin-top: 5px;
@@ -165,11 +177,8 @@ hr {
     padding-bottom: 1px;
     margin-left: 1px;
     text-decoration-skip-ink: none;
-  }
-
-  p {
     position: relative;
-    display: inline-block; /* Para que el borde inferior se ajuste al contenido */
+    display: inline-block;
   }
 
   p::after {
@@ -186,7 +195,8 @@ hr {
 #Contenido{
   float: right;
   width: calc(70% - 60px);
-  padding: 30px;
+  order: 2;
+  padding: 20px;
 
   .article{
     margin-top: 15px;
@@ -195,7 +205,7 @@ hr {
   }
   
   hr {
-    width: 730px;
+    cursor: default;
     border: none;
     height: 1px;
     background-color: RGB(46, 47, 47);
@@ -207,6 +217,7 @@ hr {
   width: 100%;
   height: 35px;
   line-height: 35px;
+  order: 3;
 
   p{
     cursor: default;
@@ -230,7 +241,25 @@ hr {
 ::-webkit-scrollbar-button {
   display: none;
 }
-  
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Barralateral {
+    width: 100%;
+    order: 1;
+  }
+
+  #Contenido {
+    width: 100%;
+    order: 2;
+    padding: 0px;
+  }
+}
+
 body {
   background: #181919;
   font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -239,7 +268,6 @@ body {
 }
 
 h1 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 52px;
@@ -251,7 +279,6 @@ h1 {
 }
 
 h2 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 30px;
@@ -263,7 +290,6 @@ h2 {
 }
 
 h3 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 25px;
@@ -275,7 +301,6 @@ h3 {
 }
 
 h4 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
@@ -287,7 +312,6 @@ h4 {
 }
 
 h5 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -299,7 +323,6 @@ h5 {
 }
 
 h6 {
-  cursor: default;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
@@ -311,7 +334,6 @@ h6 {
 }
 
 p {
-  cursor: default;
   color: RGB(212, 212, 213);
   font-size: 14px;
   line-height: 150%;
