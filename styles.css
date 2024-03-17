@@ -1,335 +1,355 @@
+/* Importa la fuente Lato desde Google Fonts con los pesos 900 (negrita) y 400 italic (normal cursiva) */
 @import url(https://fonts.googleapis.com/css?family=Lato:900,400italic);
 
-body{
-    background: #181918;
+/* Establece el color de fondo del cuerpo del documento */
+body {
+    background: #181918; /* Color de fondo oscuro */
 }
 
+/* Estilos para el contenedor con la clase 'Responsive' */
+.Responsive {
+    width: 100%; /* Ancho del contenedor al 100% del tamaño del viewport */
+    height: 100%; /* Altura del contenedor al 100% del tamaño del viewport */
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    justify-content: space-around; /* Distribuye los elementos a lo largo del contenedor con espacio alrededor */
+    margin: 0 auto; /* Margen superior e inferior de 0 y margen horizontal automático para centrar el contenedor */
+}
+
+/* Estilos para las clases .frame1, .frame2, y .frame3 */
+.frame1, .frame2, .frame3 {
+    flex: 0 0 auto; /* No se expande, no se contrae y no crece automáticamente */
+    overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+    position: absolute; /* Posición absoluta en relación con el contenedor padre */
+    top: 16%; /* Distancia desde la parte superior del contenedor padre */
+    width: 340px; /* Ancho fijo */
+    height: 440px; /* Altura fija */
+    border-radius: 2px; /* Bordes redondeados */
+    background: #181918; /* Color de fondo oscuro */
+    box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50); /* Sombra */
+    color: #fff; /* Color del texto */
+    font-family: 'Lato', Helvetica, sans-serif; /* Fuente */
+    -webkit-font-smoothing: antialiased; /* Suavizado de la fuente en Webkit */
+    -moz-osx-font-smoothing: grayscale; /* Suavizado de la fuente en Firefox para Mac */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+    transition: all 400ms ease; /* Transición de todas las propiedades durante 400ms con efecto de suavizado */
+
+    /* Estilos al pasar el ratón sobre el elemento */
+    &:hover {
+        box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50); /* Sombra */
+        transform: translateY(-3%); /* Translación hacia arriba */
+        -webkit-transform: translateY(-3%); /* Translación hacia arriba para Webkit */
+        -moz-transform: translateY(-3%); /* Translación hacia arriba para Firefox */
+        -ms-transform: translateY(-3%); /* Translación hacia arriba para Internet Explorer */
+        -o-transform: translateY(-3%); /* Translación hacia arriba para Opera */
+    }
+}
+
+/* Estilos específicos para la clase .frame1 */
 .frame1 {
-	position: absolute;
-	top: 50%;
-	left: 25%;
-	width: 340px;
-	height: 440px;
-	margin-top: -200px;
-	margin-left: -250px;
-	border-radius: 2px;
-	overflow: hidden;
-	background: #181918;
-	box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-	color: #fff;
-	font-family: 'Lato', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	cursor: pointer;
-	transition: all 400ms ease;
-
-	&:hover {
-		box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-		transform: translateY(-3%);
-		-webkit-transform: translateY(-3%);
-		-moz-transform: translateY(-3%);
-		-ms-transform: translateY(-3%);
-		-o-transform: translateY(-3%);	
-	}
+    left: 5%; /* Posición a 5% desde la izquierda del contenedor padre */
 }
 
+/* Estilos específicos para la clase .frame2 */
 .frame2 {
-	position: absolute;
-	top: 50%;
-	left: 55%;
-	width: 340px;
-	height: 440px;
-	margin-top: -200px;
-	margin-left: -250px;
-	border-radius: 2px;
-	overflow: hidden;
-	background: #181918;
-	box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-	color: #fff;
-	font-family: 'Lato', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	cursor: pointer;
-
-	transition: all 400ms ease;
-
-	&:hover {
-		box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-		transform: translateY(-3%);
-		-webkit-transform: translateY(-3%);
-		-moz-transform: translateY(-3%);
-		-ms-transform: translateY(-3%);
-		-o-transform: translateY(-3%);	
-	}
+    left: 50%; /* Posición a la mitad del contenedor padre */
+    margin-left: -170px; /* Desplazamiento negativo para centrar horizontalmente */
 }
 
+/* Estilos específicos para la clase .frame3 */
 .frame3 {
-	position: absolute;
-	top: 50%;
-	left: 85%;
-	width: 340px;
-	height: 440px;
-	margin-top: -200px;
-	margin-left: -250px;
-	border-radius: 2px;
-	overflow: hidden;
-	background: #181918;
-	box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-	color: #fff;
-	font-family: 'Lato', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	cursor: pointer;
-
-	transition: all 400ms ease;
-
-	&:hover {
-		box-shadow: 1px 2px 10px 0px rgba(171, 171, 171, 0.50);
-		transform: translateY(-3%);
-		-webkit-transform: translateY(-3%);
-		-moz-transform: translateY(-3%);
-		-ms-transform: translateY(-3%);
-		-o-transform: translateY(-3%);	
-	}
+    right: 5%; /* Posición a 5% desde la derecha del contenedor padre */
 }
 
+/* Estilos aplicados cuando el ancho de la pantalla es igual o menor a 1180px */
+@media (max-width: 1180px) {
+    /* Estilos para el contenedor con la clase 'Responsive' */
+    .Responsive {
+        flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    /* Estilos para las clases .frame1, .frame2, y .frame3 dentro del media query */
+    .frame1, .frame2, .frame3 {
+        position: relative; /* Posición relativa en relación con el flujo normal del documento */
+        left: auto; /* Resetear posición izquierda */
+        right: auto; /* Resetear posición derecha */
+        margin: 50px 0; /* Margen superior e inferior de 50px */
+    }
+}
+
+/* Estilos para las barras de desplazamiento en WebKit */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    background-color: RGB(32, 32, 32); /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Estilos para la pista de la barra de desplazamiento en WebKit */
+::-webkit-scrollbar-track {
+    background-color: RGB(32, 32, 32); /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+/* Estilos para el control deslizante de la barra de desplazamiento en WebKit */
+::-webkit-scrollbar-thumb {
+    background-color: RGB(71, 76, 80); /* Color del control deslizante de la barra de desplazamiento */
+}
+
+/* Estilos para el botón de la barra de desplazamiento en WebKit */
+::-webkit-scrollbar-button {
+    display: none; /* Oculta el botón de la barra de desplazamiento */
+}
+
+/* Estilos para la clase .bookcplushplush */
 .bookcplushplush {
-	position: absolute;
-	width: 300px;
-	height: 400px;
-	top: 20px;
-	left: 20px;
-	border-radius: 2px 4px 4px 2px;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3);
-	background: #16589D;
-	background: -moz-linear-gradient(45deg,  #16589D 0%, #16589D 100%);
-	background: -webkit-linear-gradient(45deg,  #16589D 0%,#16589D 100%);
-	background: linear-gradient(45deg,  #16589D 0%,#16589D 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16589D', endColorstr='#16589D',GradientType=1 ); 
+    position: absolute; /* Posición absoluta en relación con el contenedor padre */
+    width: 300px; /* Ancho del elemento */
+    height: 400px; /* Altura del elemento */
+    top: 20px; /* Distancia desde la parte superior del contenedor padre */
+    left: 20px; /* Distancia desde el borde izquierdo del contenedor padre */
+    border-radius: 2px 4px 4px 2px; /* Bordes redondeados */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3); /* Sombra */
+    background: #16589D; /* Color de fondo */
+    /* Gradiente de fondo */
+    background: -moz-linear-gradient(45deg,  #16589D 0%, #16589D 100%);
+    background: -webkit-linear-gradient(45deg,  #16589D 0%,#16589D 100%);
+    background: linear-gradient(45deg,  #16589D 0%,#16589D 100%);
+    /* Fallback para navegadores antiguos */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16589D', endColorstr='#16589D',GradientType=1 );
 
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 20px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		border-radius: 2px 0 0 2px;
-		/* http://colorzilla.com/gradient-editor/#ffffff+45,000000+49&0+0,0.15+20,0.15+84,0+100 */
-		background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%);
-		background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 );
+    /* Estilos para el pseudoelemento ::before */
+    &:before {
+        content: ''; /* Contenido generado */
+        display: block; /* Mostrar como bloque */
+        position: absolute; /* Posición absoluta en relación con el elemento padre */
+        width: 20px; /* Ancho del pseudoelemento */
+        top: 0; /* Distancia desde la parte superior del elemento padre */
+        left: 0; /* Distancia desde el borde izquierdo del elemento padre */
+        bottom: 0; /* Distancia desde la parte inferior del elemento padre */
+        border-radius: 2px 0 0 2px; /* Bordes redondeados */
+        /* Gradiente de fondo */
+        background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
+        /* Fallback para navegadores antiguos */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 );
 	}
 
 	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 10px;
-		top: -1px;
-		right: 15px;
-		bottom: -1px;
-		border-radius: 1px;
-		box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4);
-		background: #a90329;
-		background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); 
-		background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 );
-	}
+        content: ''; /* Contenido generado después del elemento */
+        display: block; /* Muestra como bloque */
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        width: 10px; /* Ancho del elemento */
+        top: -1px; /* Alineado arriba con un desplazamiento de -1px */
+        right: 15px; /* Alineado a la derecha con un desplazamiento de 15px */
+        bottom: -1px; /* Alineado abajo con un desplazamiento de -1px */
+        border-radius: 1px; /* Bordes redondeados */
+        box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4); /* Sombra */
+        background: #a90329; /* Fondo */
+        background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); /* Gradiente lineal Mozilla */
+        background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal WebKit */
+        background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal estándar */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 ); /* Filtro para gradientes en IE */
+    }
 
-	.title {
-		position: absolute;
-		top: 55px;
-		left: 18px;
+    .title {
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        top: 55px; /* Distancia desde la parte superior del contenedor padre */
+        left: 18px; /* Distancia desde el borde izquierdo del contenedor padre */
 
-		.big {
-			font-size: 36px;
-			line-height: 120%;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
+        .big {
+            font-size: 36px; /* Tamaño de la fuente */
+            line-height: 120%; /* Altura de línea */
+            font-weight: 700; /* Grosor de la fuente */
+            text-transform: uppercase; /* Transformación de texto a mayúsculas */
+            letter-spacing: 1px; /* Espaciado entre letras */
+        }
 
-		.small {
-			font-size: 16px;
-			line-height: 160%;
-			font-weight: 400;
-			font-style: italic;
-			padding-left: 2px;
-			color: #ccc;
-		}
+        .small {
+            font-size: 16px; /* Tamaño de la fuente */
+            line-height: 160%; /* Altura de línea */
+            font-weight: 400; /* Grosor de la fuente */
+            font-style: italic; /* Estilo de la fuente */
+            padding-left: 2px; /* Espaciado a la izquierda */
+            color: #ccc; /* Color del texto */
+        }
 
-		img{
-			width: 65%;
-			position:  absolute;
-			top: 160px;
-			left: 55px;
-			border-radius: 20px;
-			-webkit-border-radius: 20px;
-			-moz-border-radius: 20px;
-			-ms-border-radius: 20px;
-			-o-border-radius: 20px;
-		}
-	}
-
+        img {
+            width: 65%; /* Ancho de la imagen */
+            position: absolute; /* Posición absoluta en relación con el contenedor padre */
+            top: 160px; /* Distancia desde la parte superior del contenedor padre */
+            left: 55px; /* Distancia desde el borde izquierdo del contenedor padre */
+            border-radius: 20px; /* Bordes redondeados */
+            -webkit-border-radius: 20px; /* Bordes redondeados para WebKit */
+            -moz-border-radius: 20px; /* Bordes redondeados para Mozilla */
+            -ms-border-radius: 20px; /* Bordes redondeados para IE */
+            -o-border-radius: 20px; /* Bordes redondeados para Opera */
+        }
+    }
 }
 
+/* Estilos para la clase .bookcsharp */
 .bookcsharp {
-	position: absolute;
-	width: 300px;
-	height: 400px;
-	top: 20px;
-	left: 20px;
-	border-radius: 2px 4px 4px 2px;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3);
-	background: #570C64;
-	background: -moz-linear-gradient(45deg,  #570C64 0%, #570C64 100%);
-	background: -webkit-linear-gradient(45deg,  #570C64 0%,#570C64 100%);
-	background: linear-gradient(45deg,  #570C64 0%,#570C64 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#570C64', endColorstr='#570C64',GradientType=1 ); 
+    position: absolute; /* Posición absoluta en relación con el contenedor padre */
+    width: 300px; /* Ancho del elemento */
+    height: 400px; /* Altura del elemento */
+    top: 20px; /* Distancia desde la parte superior del contenedor padre */
+    left: 20px; /* Distancia desde el borde izquierdo del contenedor padre */
+    border-radius: 2px 4px 4px 2px; /* Bordes redondeados */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3); /* Sombra */
+    background: #570C64; /* Fondo */
+    background: -moz-linear-gradient(45deg,  #570C64 0%, #570C64 100%); /* Gradiente lineal Mozilla */
+    background: -webkit-linear-gradient(45deg,  #570C64 0%,#570C64 100%); /* Gradiente lineal WebKit */
+    background: linear-gradient(45deg,  #570C64 0%,#570C64 100%); /* Gradiente lineal estándar */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#570C64', endColorstr='#570C64',GradientType=1 ); /* Filtro para gradientes en IE */
 
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 20px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		border-radius: 2px 0 0 2px;
-		/* http://colorzilla.com/gradient-editor/#ffffff+45,000000+49&0+0,0.15+20,0.15+84,0+100 */
-		background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%);
-		background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 );
-}
+    &:before {
+        content: ''; /* Contenido generado antes del elemento */
+        display: block; /* Muestra como bloque */
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        width: 20px; /* Ancho del elemento */
+        top: 0; /* Alineado arriba */
+        left: 0; /* Alineado a la izquierda */
+        bottom: 0; /* Alineado abajo */
+        border-radius: 2px 0 0 2px; /* Bordes redondeados */
+        background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%); /* Gradiente lineal Mozilla */
+        background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%); /* Gradiente lineal WebKit */
+        background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%); /* Gradiente lineal estándar */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 ); /* Filtro para gradientes en IE */
+    }
 
 	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 10px;
-		top: -1px;
-		right: 15px;
-		bottom: -1px;
-		border-radius: 1px;
-		box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4);
-		background: #a90329;
-		background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); 
-		background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 );
+		content: ''; /* Contenido generado después del elemento */
+		display: block; /* Muestra como bloque */
+		position: absolute; /* Posición absoluta en relación con el contenedor padre */
+		width: 10px; /* Ancho del elemento */
+		top: -1px; /* Alineado arriba con un desplazamiento de -1px */
+		right: 15px; /* Alineado a la derecha con un desplazamiento de 15px */
+		bottom: -1px; /* Alineado abajo con un desplazamiento de -1px */
+		border-radius: 1px; /* Bordes redondeados */
+		box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4); /* Sombra */
+		background: #a90329; /* Fondo */
+		background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); /* Gradiente lineal Mozilla */
+		background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal WebKit */
+		background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal estándar */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 ); /* Filtro para gradientes en IE */
 	}
 
 	.title {
-		position: absolute;
-		top: 55px;
-		left: 18px;
+		position: absolute; /* Posición absoluta en relación con el contenedor padre */
+		top: 55px; /* Distancia desde la parte superior del contenedor padre */
+		left: 18px; /* Distancia desde el borde izquierdo del contenedor padre */
 
 		.big {
-			font-size: 36px;
-			line-height: 120%;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 1px;
+			font-size: 36px; /* Tamaño de la fuente */
+			line-height: 120%; /* Altura de línea */
+			font-weight: 700; /* Grosor de la fuente */
+			text-transform: uppercase; /* Transformación de texto a mayúsculas */
+			letter-spacing: 1px; /* Espaciado entre letras */
 		}
 
 		.small {
-			font-size: 16px;
-			line-height: 160%;
-			font-weight: 400;
-			font-style: italic;
-			padding-left: 2px;
-			color: #ccc;
+			font-size: 16px; /* Tamaño de la fuente */
+			line-height: 160%; /* Altura de línea */
+			font-weight: 400; /* Grosor de la fuente */
+			font-style: italic; /* Estilo de la fuente */
+			padding-left: 2px; /* Espaciado a la izquierda */
+			color: #ccc; /* Color del texto */
 		}
 
-		img{
-			width: 65%;
-			position:  absolute;
-			top: 160px;
-			left: 55px;
-			border-radius: 20px;
-			-webkit-border-radius: 20px;
-			-moz-border-radius: 20px;
-			-ms-border-radius: 20px;
-			-o-border-radius: 20px;
+		img {
+			width: 65%; /* Ancho de la imagen */
+			position: absolute; /* Posición absoluta en relación con el contenedor padre */
+			top: 160px; /* Distancia desde la parte superior del contenedor padre */
+			left: 55px; /* Distancia desde el borde izquierdo del contenedor padre */
+			border-radius: 20px; /* Bordes redondeados */
+			-webkit-border-radius: 20px; /* Bordes redondeados para WebKit */
+			-moz-border-radius: 20px; /* Bordes redondeados para Mozilla */
+			-ms-border-radius: 20px; /* Bordes redondeados para IE */
+			-o-border-radius: 20px; /* Bordes redondeados para Opera */
 		}
 	}
-
 }
 
-
+/* Estilos para la clase .bookvisualbasic */
 .bookvisualbasic {
-	position: absolute;
-	width: 300px;
-	height: 400px;
-	top: 20px;
-	left: 20px;
-	border-radius: 2px 4px 4px 2px;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3);
-	background: #042c84;
-	background: -moz-linear-gradient(45deg,  #042c84 0%, #042c84 100%);
-	background: -webkit-linear-gradient(45deg,  #042c84 0%,#042c84 100%);
-	background: linear-gradient(45deg,  #042c84 0%,#042c84 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#042c84', endColorstr='#042c84',GradientType=1 ); 
+    position: absolute; /* Posición absoluta en relación con el contenedor padre */
+    width: 300px; /* Ancho del elemento */
+    height: 400px; /* Altura del elemento */
+    top: 20px; /* Distancia desde la parte superior del contenedor padre */
+    left: 20px; /* Distancia desde el borde izquierdo del contenedor padre */
+    border-radius: 2px 4px 4px 2px; /* Bordes redondeados */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3); /* Sombra */
+    background: #042c84; /* Fondo */
+    background: -moz-linear-gradient(45deg,  #042c84 0%, #042c84 100%); /* Gradiente lineal Mozilla */
+    background: -webkit-linear-gradient(45deg,  #042c84 0%,#042c84 100%); /* Gradiente lineal WebKit */
+    background: linear-gradient(45deg,  #042c84 0%,#042c84 100%); /* Gradiente lineal estándar */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#042c84', endColorstr='#042c84',GradientType=1 ); /* Filtro para gradientes en IE */
 
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 20px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		border-radius: 2px 0 0 2px;
-		/* http://colorzilla.com/gradient-editor/#ffffff+45,000000+49&0+0,0.15+20,0.15+84,0+100 */
-		background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%);
-		background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 );
-	}
+    &:before {
+        content: ''; /* Contenido generado antes del elemento */
+        display: block; /* Muestra como bloque */
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        width: 20px; /* Ancho del elemento */
+        top: 0; /* Alineado arriba */
+        left: 0; /* Alineado a la izquierda */
+        bottom: 0; /* Alineado abajo */
+        border-radius: 2px 0 0 2px; /* Bordes redondeados */
+        /* Gradiente de fondo */
+        background: -moz-linear-gradient(left,  rgba(87, 12, 100,0) 0%, rgba(87, 12, 100,0.1) 20%, rgba(87, 12, 100,0.1) 45%, rgba(0,0,0,0.15) 49%, rgba(0,0,0,0.15) 84%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(87, 12, 100,0) 0%,rgba(87, 12, 100,0.1) 20%,rgba(87, 12, 100,0.1) 45%,rgba(0,0,0,0.15) 49%,rgba(0,0,0,0.15) 84%,rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 ); /* Filtro para gradientes en IE */
+    }
 
 	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 10px;
-		top: -1px;
-		right: 15px;
-		bottom: -1px;
-		border-radius: 1px;
-		box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4);
-		background: #a90329;
-		background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); 
-		background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 );
-	}
+        content: ''; /* Contenido generado después del elemento */
+        display: block; /* Muestra como bloque */
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        width: 10px; /* Ancho del elemento */
+        top: -1px; /* Alineado arriba con un desplazamiento de -1px */
+        right: 15px; /* Alineado a la derecha con un desplazamiento de 15px */
+        bottom: -1px; /* Alineado abajo con un desplazamiento de -1px */
+        border-radius: 1px; /* Bordes redondeados */
+        box-shadow: -1px 0px 1px 0 rgba(0,0,0,0.4); /* Sombra */
+        background: #a90329; /* Fondo */
+        background: -moz-linear-gradient(left,  #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%); /* Gradiente lineal Mozilla */
+        background: -webkit-linear-gradient(left,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal WebKit */
+        background: linear-gradient(to right,  #a90329 0%,#8e0028 12%,#a90329 25%,#8e0028 37%,#a90329 50%,#8e0028 62%,#a90329 75%,#8e0028 87%,#a90329 100%); /* Gradiente lineal estándar */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#a90329',GradientType=1 ); /* Filtro para gradientes en IE */
+    }
 
-	.title {
-		position: absolute;
-		top: 55px;
-		left: 18px;
+    .title {
+        position: absolute; /* Posición absoluta en relación con el contenedor padre */
+        top: 55px; /* Distancia desde la parte superior del contenedor padre */
+        left: 18px; /* Distancia desde el borde izquierdo del contenedor padre */
 
-		.big {
-			font-size: 36px;
-			line-height: 120%;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
+        .big {
+            font-size: 36px; /* Tamaño de la fuente */
+            line-height: 120%; /* Altura de línea */
+            font-weight: 700; /* Grosor de la fuente */
+            text-transform: uppercase; /* Transformación de texto a mayúsculas */
+            letter-spacing: 1px; /* Espaciado entre letras */
+        }
 
-		.small {
-			font-size: 16px;
-			line-height: 160%;
-			font-weight: 400;
-			font-style: italic;
-			padding-left: 2px;
-			color: #ccc;
-		}
+        .small {
+            font-size: 16px; /* Tamaño de la fuente */
+            line-height: 160%; /* Altura de línea */
+            font-weight: 400; /* Grosor de la fuente */
+            font-style: italic; /* Estilo de la fuente */
+            padding-left: 2px; /* Espaciado a la izquierda */
+            color: #ccc; /* Color del texto */
+        }
+
+        img {
+            width: 65%; /* Ancho de la imagen */
+            position: absolute; /* Posición absoluta en relación con el contenedor padre */
+            top: 160px; /* Distancia desde la parte superior del contenedor padre */
+            left: 55px; /* Distancia desde el borde izquierdo del contenedor padre */
+            border-radius: 20px; /* Bordes redondeados */
+            -webkit-border-radius: 20px; /* Bordes redondeados para WebKit */
+            -moz-border-radius: 20px; /* Bordes redondeados para Mozilla */
+            -ms-border-radius: 20px; /* Bordes redondeados para IE */
+            -o-border-radius: 20px; /* Bordes redondeados para Opera */
+        }
 
 		.bordes{
 			border-radius: 75px;
@@ -337,14 +357,6 @@ body{
 			-moz-border-radius: 75px;
 			-ms-border-radius: 75px;
 			-o-border-radius: 75px;
-}
-
-		img{
-			width: 65%;
-			position:  absolute;
-			top: 160px;
-			left: 55px;
 		}
-	}
-
+    }
 }
