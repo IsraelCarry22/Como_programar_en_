@@ -278,11 +278,11 @@ body {
     left: 20px; /* Distancia desde el borde izquierdo del contenedor padre */
     border-radius: 2px 4px 4px 2px; /* Bordes redondeados */
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), -1px 4px 4px 0 rgba(0,0,0,0.3); /* Sombra */
-    background: #042c84; /* Fondo */
-    background: -moz-linear-gradient(45deg,  #042c84 0%, #042c84 100%); /* Gradiente lineal Mozilla */
-    background: -webkit-linear-gradient(45deg,  #042c84 0%,#042c84 100%); /* Gradiente lineal WebKit */
-    background: linear-gradient(45deg,  #042c84 0%,#042c84 100%); /* Gradiente lineal estándar */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#042c84', endColorstr='#042c84',GradientType=1 ); /* Filtro para gradientes en IE */
+    background: #1f5ee4; /* Fondo */
+    background: -moz-linear-gradient(45deg,  #1f5ee4 0%, #1f5ee4 100%); /* Gradiente lineal Mozilla */
+    background: -webkit-linear-gradient(45deg,  #1f5ee4 0%,#1f5ee4 100%); /* Gradiente lineal WebKit */
+    background: linear-gradient(45deg,  #1f5ee4 0%,#1f5ee4 100%); /* Gradiente lineal estándar */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f5ee4', endColorstr='#1f5ee4',GradientType=1 ); /* Filtro para gradientes en IE */
 
     &:before {
         content: ''; /* Contenido generado antes del elemento */
