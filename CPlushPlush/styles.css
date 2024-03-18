@@ -409,6 +409,29 @@ hr {
   }
 }
 
+@media (max-width: 400px) {
+  #Contenido {
+    .card-container{
+      .card{
+        width: 140px;
+        margin: 4px;
+      }
+
+      .card-content{
+        h5{
+          font-size: 12px;
+          margin-bottom: 2px;
+        }
+  
+        p{
+          font-size: 10px;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 375px) {
   #Contenido {
     .card-container{
@@ -437,52 +460,6 @@ hr {
     .card-container{
       .card{
         width: 100px;
-        margin: 4px;
-      }
-
-      .card-content{
-        h5{
-          font-size: 12px;
-          margin-bottom: 2px;
-        }
-  
-        p{
-          font-size: 10px;
-          margin-bottom: 2px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 310px) {
-  #Contenido {
-    .card-container{
-      .card{
-        width: 96px;
-        margin: 4px;
-      }
-
-      .card-content{
-        h5{
-          font-size: 12px;
-          margin-bottom: 2px;
-        }
-  
-        p{
-          font-size: 10px;
-          margin-bottom: 2px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 300px) {
-  #Contenido {
-    .card-container{
-      .card{
-        width: 92px;
         margin: 4px;
       }
 
