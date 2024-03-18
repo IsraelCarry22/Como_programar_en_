@@ -409,12 +409,12 @@ hr {
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 400px) {
   #Contenido {
     background-color: #1fe42f;
     .card-container{
       .card{
-        width: 50px;
+        width: 135px;
         margin: 4px;
       }
 
