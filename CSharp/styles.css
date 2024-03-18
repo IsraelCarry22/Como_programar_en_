@@ -396,6 +396,7 @@ hr {
   }
 
   #Contenido {
+    background-color: #29446C;
     width: 100%;
     order: 2;
     padding: 0px;
@@ -411,6 +412,7 @@ hr {
 
 @media (max-width: 375px) {
   #Contenido {
+    background-color: #29446C;
     .card-container{
       .card{
         width: 128px;
@@ -434,6 +436,7 @@ hr {
 
 @media (max-width: 320px) {
   #Contenido {
+    background-color: #29446C;
     .card-container{
       .card{
         width: 100px;
