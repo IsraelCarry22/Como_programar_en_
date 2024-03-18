@@ -433,7 +433,7 @@ hr {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 405px) {
   #Contenido {
     .card-container{
       .card{
