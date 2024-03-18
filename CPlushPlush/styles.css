@@ -399,6 +399,13 @@ hr {
     width: 100%;
     order: 2;
     padding: 0px;
+    
+    .card-container{
+      .card{
+        width: 150px;
+        margin: 4px;
+      }
+    }
   }
 }
 
