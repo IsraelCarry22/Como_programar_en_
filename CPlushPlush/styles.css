@@ -399,11 +399,34 @@ hr {
     width: 100%;
     order: 2;
     padding: 0px;
-    
+
     .card-container{
       .card{
         width: 150px;
         margin: 4px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  #Contenido {
+    .card-container{
+      .card{
+        width: 100px;
+        margin: 4px;
+      }
+
+      .card-content{
+        h5{
+          font-size: 12px;
+          margin-bottom: 2px;
+        }
+  
+        p{
+          font-size: 10px;
+          margin-bottom: 2px;
+        }
       }
     }
   }
