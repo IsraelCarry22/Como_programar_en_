@@ -409,7 +409,30 @@ hr {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 375px) {
+  #Contenido {
+    .card-container{
+      .card{
+        width: 128px;
+        margin: 4px;
+      }
+
+      .card-content{
+        h5{
+          font-size: 12px;
+          margin-bottom: 2px;
+        }
+  
+        p{
+          font-size: 10px;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
   #Contenido {
     .card-container{
       .card{
